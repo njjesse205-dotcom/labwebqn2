@@ -1,0 +1,160 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL STYLING */
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #FFCC00;
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.navbar a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    color: #333333;
+    text-decoration: underline;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    width: 90%;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* SERVICES SECTION */
+.services {
+    padding: 15px 30px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.services h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 15px;
+    flex: 1;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+/* LEARN MORE BUTTON */
+.btn {
+    display: inline-block;
+    background: #FFCC00;
+    color: #333333;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #333333;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background: #333333;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+/* BUNDLES PAGE */
+.bundles-content {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.bundles-content h1 {
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        font-size: 30px;
+    }
+}
